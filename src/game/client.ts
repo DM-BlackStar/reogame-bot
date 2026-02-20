@@ -30,6 +30,11 @@ export class GameClient {
     }
   }
 
+  // 公开方法供外部调用
+  public async execute(command: string): Promise<string> {
+    return this.execAsync(command);
+  }
+
   private execAsync(command: string): Promise<string> {
     return new Promise((resolve, reject) => {
       exec(`${this.ogamePath} ${command}`, { timeout: 60000 }, (error, stdout, stderr) => {
