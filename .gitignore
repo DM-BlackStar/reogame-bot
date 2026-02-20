@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+dist/
+
+# Build output
+*.js.map
+*.d.ts
+
+# Environment files (keep sample)
+.env
+.env.local
+!env.example
+
+# Credentials (sensitive)
+credentials.json
+config.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Runtime
+pid
+*.pid

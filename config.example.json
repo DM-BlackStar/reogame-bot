@@ -1,0 +1,22 @@
+{
+  "server": {
+    "port": 3000,
+    "host": "0.0.0.0"
+  },
+  "game": {
+    "mainPlanetId": 68168801,
+    "shipBuildBatch": 10,
+    "minColonyShips": 10,
+    "techTargetExpedition": 5
+  },
+  "automation": {
+    "enabled": true,
+    "intervalMs": 600000,
+    "shipPriority": [313, 312, 311, 307, 304, 303, 302, 301],
+    "buildingPriority": [100, 101, 103, 106, 108, 112, 102, 105, 109, 110, 111]
+  },
+  "logging": {
+    "level": "info",
+    "retentionDays": 7
+  }
+}
