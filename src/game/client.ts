@@ -32,7 +32,7 @@ export class GameClient {
 
   private execAsync(command: string): Promise<string> {
     return new Promise((resolve, reject) => {
-      exec(`${this.ogamePath} ${command}`, { timeout: 30000 }, (error, stdout, stderr) => {
+      exec(`${this.ogamePath} ${command}`, { timeout: 60000 }, (error, stdout, stderr) => {
         if (error) {
           reject(error);
         } else {
